@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+body {
+    font-family: 'Tenali Ramakrishna';
+    font-size: 25px;
+    line-height: .9rem;
+}
+
+.grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    border: 1px solid black;
+    border-right: 0;
+    margin: 0 auto;
+}
+
+.grid-item {
+    border-top: 1px solid black;
+    padding: 20px 20px;
+    border-right: 1px solid black;
+}
+
+.grid-item:first-child,
+:nth-of-type(2) {
+    border-top: 0px;
+}
+
+@media(max-width:600px) {
+    .grid {
+        display: block;
+        border: 0px;
+    }
+    .grid-item {
+        position: relative;
+        padding-top: 53px;
+        padding-bottom: 15px;
+        border: 0;
+        box-shadow: 0 0 1.5px rgba(0, 0, 0, .5);
+    }
+    .grid-item:first-child {
+        display: none;
+    }
+    .grid-item:nth-of-type(2) {
+        display: none;
+    }
+    .grid-item:nth-child(odd)::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 89.7%;
+        content: "Product Name";
+        height: inherit;
+        /* border-bottom: 1px solid black; */
+        padding: 12px 20px;
+        background-color: rgb(214, 212, 212);
+    }
+    .grid-item:nth-child(even)::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 89.7%;
+        content: "Product Price";
+        height: inherit;
+        background-color: rgb(214, 212, 212);
+        /* border-bottom: 1px solid black; */
+        padding: 12px 20px;
+    }
+    .grid-item:nth-of-type(3) {
+        border-top: 0px;
+    }
+}
