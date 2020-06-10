@@ -1,0 +1,7 @@
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP Warning:  include(any_how_generate_Error.php): failed to open stream: No such file or directory in D:\xampp\htdocs\php7\Error\Error.php on line 7
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP Stack trace:
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\php7\Error\Error.php:0
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP Warning:  include(): Failed opening 'any_how_generate_Error.php' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\php7\Error\Error.php on line 7
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP Stack trace:
+[10-Jun-2020 11:48:26 Europe/Berlin] PHP   1. {main}() D:\xampp\htdocs\php7\Error\Error.php:0
+[10-Jun-2020 11:48:26 Europe/Berlin] 32767
