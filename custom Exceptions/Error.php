@@ -33,9 +33,11 @@
             //echo inverse(5) . "\n";
          //echo inverse(0) . "\n";
             echo inverse(5) . "\n";
-        } catch (Exception $e) {
+        }catch(InvalidArgumentException $e) {
+            echo 'Caught exception Invalid Argument: ',  $e->getMessage(), "\n";
+        }catch (Exception $e) {
             echo 'Caught exception: ',  $e->getMessage(), "\n";
-        }
+        }finally
         {
             echo "hey i am finally always executed error are weakens in front of me";
         }
